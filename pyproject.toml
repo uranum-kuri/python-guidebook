@@ -1,0 +1,14 @@
+[tool.black]
+target-version = ["py37"]
+line-length = 88
+include = '\.py$'
+skip-string-normalization = true
+exclude = '''
+/(
+    \.git
+  | \.venv
+)/
+'''
+
+[tool.isort]
+profile = "black"
